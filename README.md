@@ -9,6 +9,25 @@ Du får også se hvilket kort som er det neste som kommer.
 
 ## Installasjon
 
-Last ned siste utgivelse fra Releases.
+Last ned siste utgivelse fra [Releases](https://github.com/Sardtok/adventur-casino/releases).
 
-Du kan også laste ned kildekoden og laste utvidelsen som en midlertidig utvidelse fra nettleseren.
+Når du trykker på lenken til XPI-filen i Firefox,
+vil du få et varsel om å installere utvidelsen i nettleseren.
+
+Hvis du velger å laste ned XPI-filen isteden, kan du installere utvidelsen på følgende måte:
+
+1. Åpne *Tillegg og temaer* fra nedtrekksmenyen
+
+![Skjermbilde av nedtrekksmenyen med Tilleg og temaer valgt](readme-img/firefox-install-step1.png)
+
+2. Trykk på tannhjulet for å åpne menyen for utvidelser, og velg *Installer utvidelse fra fil*
+
+![Skjermbilde av nedtrekksmenyen med Tilleg og temaer valgt](readme-img/firefox-install-step2.png)
+
+3. Finn XPI-filen på datamaskinen, og velg denne.
+
+Du kan også laste ned kildekoden eller klone git-lageret
+og laste utvidelsen som en midlertidig utvidelse fra nettleseren.
+For å installere en midlertidig utvidelse i Firefox, gå til siden *about:debugging*,
+velg *This Firefox* og *Load Temporary Add-on*. Åpne mappen med utvidelsen
+og velg *manifest.json* for å installere utvidelsen frem til du lukker nettleseren.
