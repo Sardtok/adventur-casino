@@ -145,6 +145,10 @@ function handleMutation(_mutations, _observer) {
   }
 
   if (isCasino) {
+    if (state.reset && document.getElementsByClassName("reverted").length > 0) {
+      state.reset = false;
+    }
+
     updateState(proseElements);
     renderState();
   } else if (casinoContainer) {
