@@ -1,0 +1,13 @@
+{
+  "addons": {
+    "{adventur-casino@chickensoft.com}": {
+      "updates": [
+        {
+          "version": "0.0.1",
+          "update_link": "https://github.com/Sardtok/adventur-casino/releases/download/v0.0.1/adventur-casino-0.0.1.xpi",
+          "update_hash": "sha256:4fe69b2aa4b15d8d040e83e9569cccb139a7dcca1160e5bf12490a86f4dc88ea"
+        }
+      ]
+    }
+  }
+}

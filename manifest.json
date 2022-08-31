@@ -22,7 +22,8 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "adventur-casino@chickensoft.com"
+      "id": "adventur-casino@chickensoft.com",
+      "update-url":  "https://raw.githubusercontent.com/Sardtok/adventur-casino/main/updates.json"
     }
   }
 
