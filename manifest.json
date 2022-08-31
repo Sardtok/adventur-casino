@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Adventur Casino",
+  "version": "0.0.1",
+
+  "description": "Adds a card playing UI when at the casino.",
+
+  "icons": {
+    "48": "icons/adventur-casino-48.png",
+    "180": "icons/adventur-casino-180.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.adventur.no/*"],
+      "js": ["src/adventur-casino.js"],
+      "css": ["style/adventur-casino.css"]
+    }
+  ],
+
+  "permissions": ["storage"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "adventur-casino@chickensoft.com"
+    }
+  }
+
+}
