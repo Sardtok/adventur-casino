@@ -12,7 +12,7 @@ let state = {
   nines: [],
   position: -1,
   reset: false
-}
+};
 
 function observe() {
   observer.observe(document.getElementById("app-area"),
