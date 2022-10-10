@@ -3,6 +3,7 @@ const casinoPattern = /dealeren/i;
 const betPattern = /Du slenger (\d+) kongerupi på bordet/;
 const dealPattern = /Dealeren flipper kortet rundt. Det er ([SRKH])\w+ ([2-4]). Han legger det i haug (sju|åtte|ni),/;
 const winPattern = /Han blar opp kongerupi fra under disken, og legger dem pent under den halve steinen. Du løfter den opp og tar pengene./;
+const losePattern = /Det blir krakk. Beklager./;
 let state = {
   bet: 0,
   deck: [],
@@ -112,7 +113,7 @@ function updateState(proseElements) {
     default: changed = false;
   }
 
-  if (anyElementMatches(proseElements, winPattern)) {
+  if (anyElementMatchesOneOf(proseElements, winPattern, losePattern)) {
     state.reset = true;
   }
 
