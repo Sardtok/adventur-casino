@@ -1,3 +1,33 @@
+/** Chromium polyfill. */
+let browser = globalThis.browser ?? {
+  storage: {
+    local: {
+      set: function (items) {
+        return new Promise((resolve, reject) => {
+          chrome.storage.local.set(items, () => {
+            if (chrome.runtime.lastError) {
+              reject(new Error(chrome.runtime.lastError));
+            } else {
+              resolve();
+            }
+          })
+        });
+      },
+      get: function (items) {
+        return new Promise((resolve, reject) => {
+          chrome.storage.local.get(items, (i) => {
+            if (chrome.runtime.lastError) {
+              reject(new Error(chrome.runtime.lastError));
+            } else {
+              resolve(i);
+            }
+          })
+        });
+      }
+    }
+  }
+};
+
 const observer = new MutationObserver(handleMutation);
 const casinoPattern = /dealeren/i;
 const betPattern = /Du slenger (\d+) kongerupi på bordet/;
