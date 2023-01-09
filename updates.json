@@ -3,10 +3,15 @@
     "{adventur-casino@chickensoft.com}": {
       "updates": [
         {
+          "version": "0.0.3",
+          "update_link": "https://github.com/Sardtok/adventur-casino/releases/download/v0.0.3/adventur-casino-0.0.3.xpi",
+          "update_hash": "sha256:8a676990f7d366948842e6023653b4b644471f27e8d6cfa8eca948eb879d35b4"
+        },
+        {
           "version": "0.0.2",
           "update_link": "https://github.com/Sardtok/adventur-casino/releases/download/v0.0.2/adventur-casino-0.0.2.xpi",
           "update_hash": "sha256:ba7c831087c36e0ac4e4f9b964323e1c2bf6841c6ea2fb64f28309b7c8eda77a"
-        },,
+        },
         {
           "version": "0.0.1",
           "update_link": "https://github.com/Sardtok/adventur-casino/releases/download/v0.0.1/adventur-casino-0.0.1.xpi",
